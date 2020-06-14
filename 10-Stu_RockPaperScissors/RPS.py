@@ -1,19 +1,19 @@
-# Incorporate the random library
+#Import the random library
 import random
 
-# Print Title
+#Print the game title
 print("Let's Play Rock Paper Scissors!")
 
-# Specify the three options
+#Specify the three possible options
 options = ["r", "p", "s"]
 
-# Computer Selection
+#Specify the computer Selection
 computer_choice = random.choice(options)
 
-# User Selection
-user_choice = input("Make your Choice: (r)ock, (p)aper, (s)cissors? ")
+#Requesting the user's choice
+user_choice = input("What is your choice: (r)ock, (p)aper or (s)cissors? ")
 
-# Run Conditionals
+#Specify all possible conditions
 if (user_choice == "r" and computer_choice == "r"):
     print("You chose rock. Hal chose rock.")
     print("You tied!")
@@ -44,5 +44,3 @@ elif (user_choice == "s" and computer_choice == "s"):
 else:
     print("Invalid input.")
     print("Next time try r, p or s.")
-
-
