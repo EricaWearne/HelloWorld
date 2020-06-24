@@ -52,4 +52,3 @@ while x == "Y" or x=='y':
         print("Next time try r, p or s.")
 
     x = input("Would you like to keep playing? (Y/N) ")
-    x= x.upper()
