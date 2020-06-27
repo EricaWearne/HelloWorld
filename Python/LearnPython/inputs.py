@@ -1,0 +1,6 @@
+name = input("What is your name? ")
+age = input("How old are you? ")
+truth = input("Is this statement true? ")
+print(f"My name is {name}")
+print(f"I am {age} years old")
+print(f"The statement was {truth}")
