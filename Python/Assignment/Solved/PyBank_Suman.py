@@ -1,4 +1,4 @@
-
+import os
 import csv
 
 def read_file(filename):
@@ -46,8 +46,8 @@ pro_loss= []
 filename= 'budget_data.csv'
 read_file(filename)
 
-lentgh = len(months)
-print("total no of months in the dataset ", lentgh)
+length = len(months)
+print("total no of months in the dataset ", length)
 
 #total_amount = total_pro_loss()
 #print (total_amount)
