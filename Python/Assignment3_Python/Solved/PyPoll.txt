@@ -2,7 +2,7 @@ Election Results
 ----------------------------
 Total Votes: 3521001
 ----------------------------
-<function details at 0x0000021C177E8558>
+<function details at 0x00000203E8578558>
 ----------------------------
 Winner: Khan
 ----------------------------

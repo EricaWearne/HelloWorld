@@ -91,3 +91,18 @@ with open('election_results.txt', 'w') as text:
     text.write("---------------------------------------\n")
     text.write("The winner is: " + winner + "\n")
     text.write("---------------------------------------\n")
+
+
+
+    #def details():
+#    #for candidate in candidates:
+ #   max_vote_count=0
+ #   for uni_cand in unique_candidate:
+ #       count = candidates.count(uni_cand)
+ #       vote_percentage = (count/vote_total)*100
+ #       rounded_percentage= "{:.3f}".format(vote_percentage)
+ #       if(max_vote_count<count):
+ #           max_vote_count=count
+ #           winner = str(uni_cand)
+ #       print(f"{uni_cand}: {rounded_percentage}% ({count})")
+ #   return winner

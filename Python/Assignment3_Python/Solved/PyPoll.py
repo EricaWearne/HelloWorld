@@ -14,29 +14,26 @@ winner = ()
 with open(PyPoll_file_path, "r") as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ",")
     header = next(csvreader)
-    
-    #finding total number of votes
-    #rows = list(csvreader)
-    
-    #determining unique candidates
+                    
+    #Determine unique candidates
     for columns in csvreader:
         candidates.append(columns[2])
         unique_candidate.add(columns[2])
-        
+                
     #Determine total number of votes
     vote_total = len(candidates)
-
+    
 def details():
     #for candidate in candidates:
     max_vote_count=0
-    for uni_cand in unique_candidate:
-        count = candidates.count(uni_cand)
+    for x in unique_candidate:
+        count = candidates.count(x)
         vote_percentage = (count/vote_total)*100
         rounded_percentage= "{:.3f}".format(vote_percentage)
         if(max_vote_count<count):
             max_vote_count=count
-            winner = str(uni_cand)
-        print(f"{uni_cand}: {rounded_percentage}% ({count})")
+            winner = str(x)
+        print(f"{x}: {rounded_percentage}% ({count})")
     return winner
 
 print("Election Results")
